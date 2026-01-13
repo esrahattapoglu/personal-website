@@ -1,0 +1,112 @@
+import { useLanguage } from '../context/LanguageContext';
+
+import axios from 'axios';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+function Hero() {
+  const { currentData } = useLanguage();
+
+  const handleHireMe = async () => {
+    try {
+      await axios.post('https://jsonplaceholder.typicode.com/posts');
+      toast.success(currentData.hireSuccess, {
+        position: "top-right",
+        autoClose: 2000
+      });
+
+    } catch (error) {
+      toast.error(currentData.hireError);
+    }
+  };
+
+  return (
+    <section className="py-28">
+
+      <ToastContainer />
+
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-12">
+
+          {/* Sol taraf */}
+
+          <div className="flex-[1]">
+
+            {/* İsim */}
+            <div className="flex items-center gap-4 mb-8">
+              <div className="w-20 h-1 bg-main-purple"></div>
+              <h2 className="text-main-purple font-medium">{currentData.name}</h2>
+            </div>
+
+
+            {/* Ana başlık */}
+            <h1 className="text-5xl md:text-6xl font-bold mb-8 leading-tight dark:text-white">
+              {currentData.title}
+            </h1>
+
+            {/* Açıklama */}
+
+            <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">
+              {currentData.description}
+            </p>
+
+            {/* Butonlar */}
+            <div className="flex flex-wrap gap-4">
+              
+              <button
+                onClick={handleHireMe}
+                className="px-8 py-3 bg-main-purple text-white rounded-md hover:bg-purple-700 transition font-medium"
+              >
+                {currentData.hireMe}
+              </button>
+
+              <a
+                href="https://github.com/esrahattapoglu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-3 border-2 border-main-purple text-main-purple rounded-md hover:bg-main-purple hover:text-white transition font-medium flex items-center gap-2"
+              >
+                
+                <img
+                  src="/images/github.png"
+                  alt="Github"
+                  className="w-5 h-5"
+                />
+                {currentData.github}
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/esra-hattapo%C4%9Flu-39a041238/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-3 border-2 border-main-purple text-main-purple rounded-md hover:bg-main-purple hover:text-white transition font-medium flex items-center gap-2"
+              >
+                <img
+                  src="/images/LinkedIn.png"
+                  alt="LinkedIn"
+                  className="w-5 h-5"
+                />
+                {currentData.linkedin}
+              </a>
+
+            </div>
+          </div>
+
+          {/* Sağ taraf */}
+          <div className="flex-[1]">
+            <div className="rounded-2xl overflow-hidden shadow-2xl">
+              <img
+                src="/images/profile.jpg"
+                alt={currentData.name}
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default Hero;
