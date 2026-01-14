@@ -7,14 +7,14 @@ export const siteData = {
     description: "Merhaba, Ben Esra. Ben bir full-stack developer'ım. Eğer sağlam ve ölçeklenebilir frontend ürünleri hazırlayacak bir geliştirici arıyorsanız, sizinle çalışmak isterim.",
 
 
-    hireMe: "İşe Al",  
+    hireMe: "İşe Al",
     github: "Github",
     linkedin: "Linkedin",
 
-    skills: "Yetenekler",  
-    projects: "Projeler",  
+    skills: "Yetenekler",
+    projects: "Projeler",
 
-  
+
     darkMode: "KOYU MOD",
     lightMode: "AÇIK MOD",
 
@@ -60,7 +60,7 @@ export const siteData = {
 
 
     // Projects 
-    
+
     projectsTitle: "Projeler",
     projectsList: [
       {
@@ -69,7 +69,7 @@ export const siteData = {
         technologies: ["html", "css", "responsive"],
         image: "/images/1.proje.jpg",
         github: "https://github.com/esrahattapoglu/fsweb-s4-bonus-challenge-html-pizza",
-        viewSite: "#"
+        viewSite: "https://fsweb-s4-bonus-challenge-html-pizza-gamma.vercel.app"
       },
       {
         name: "Pizza Sipariş Uygulaması",
@@ -77,7 +77,7 @@ export const siteData = {
         technologies: ["react", "axios", "cypress"],
         image: "/images/2.proje.jpg",
         github: "https://github.com/esrahattapoglu/fsweb-s8-challenge-pizza",
-        viewSite: "#"
+        viewSite: "https://fsweb-s8-challenge-pizza-tawny.vercel.app"
       },
       {
         name: "Kişisel Web Sitesi",
@@ -96,7 +96,7 @@ export const siteData = {
     personalBlog: "Kişisel Blog",
     footerGithub: "Github",
     footerLinkedin: "Linkedin",
-    
+
     //axios
     hireSuccess: "İşe alım talebi gönderildi!",
     hireError: "Bir hata oluştu. Lütfen tekrar deneyin."
@@ -160,7 +160,7 @@ export const siteData = {
     aboutMeText: "I am a Software Developer actively developing Full Stack projects. Currently, I am developing projects every day and delivering a comprehensive software project every month within Workintech's intensive and application-focused program.",
     aboutMeText2: "I constantly improve myself by learning new technologies and turn what I learn into real projects. I am a passionate developer who loves producing and problem-solving in software development.",
 
-    
+
     // Projects 
 
     projectsTitle: "Projects",
@@ -171,7 +171,7 @@ export const siteData = {
         technologies: ["html", "css", "responsive"],
         image: "/images/1.proje.jpg",
         github: "https://github.com/esrahattapoglu/fsweb-s4-bonus-challenge-html-pizza",
-        viewSite: "#"
+        viewSite: "https://fsweb-s4-bonus-challenge-html-pizza-gamma.vercel.app"
       },
       {
         name: "Pizza Ordering Application",
@@ -179,7 +179,7 @@ export const siteData = {
         technologies: ["react", "axios", "cypress"],
         image: "/images/2.proje.jpg",
         github: "https://github.com/esrahattapoglu/fsweb-s8-challenge-pizza",
-        viewSite: "#"
+        viewSite: "https://fsweb-s8-challenge-pizza-tawny.vercel.app"
       },
       {
         name: "Personal Website",
