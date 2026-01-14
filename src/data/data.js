@@ -85,7 +85,7 @@ export const siteData = {
         technologies: ["react", "tailwind", "context api"],
         image: "/images/3.proje.jpg",
         github: "https://github.com/esrahattapoglu",
-        viewSite: "#"
+        viewSite: "https://personal-website-pearl-sigma-11.vercel.app"
       }
     ],
     githubLabel: "Github",
@@ -187,7 +187,8 @@ export const siteData = {
         technologies: ["react", "tailwind", "context api"],
         image: "/images/3.proje.jpg",
         github: "https://github.com/esrahattapoglu",
-        viewSite: "#"
+        viewSite: "https://personal-website-pearl-sigma-11.vercel.app"
+
       }
     ],
     githubLabel: "Github",
