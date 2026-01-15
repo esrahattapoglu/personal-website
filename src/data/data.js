@@ -84,7 +84,7 @@ export const siteData = {
         description: "Frontend eğitimi sürecinde öğrenilen konuların bir araya getirildiği kişisel portfolio sitesi. React component yapısı, Context API ile global state yönetimi, dark mode ve Türkçe-İngilizce dil desteği içermektedir.",
         technologies: ["react", "tailwind", "context api"],
         image: "/images/3.proje.jpg",
-        github: "https://github.com/esrahattapoglu",
+        github: "https://github.com/esrahattapoglu/personal-website",
         viewSite: "https://personal-website-pearl-sigma-11.vercel.app"
       }
     ],
@@ -186,7 +186,7 @@ export const siteData = {
         description: "A personal portfolio website showcasing frontend development skills. Built with React components, Context API for global state management, featuring dark mode and Turkish-English language support.",
         technologies: ["react", "tailwind", "context api"],
         image: "/images/3.proje.jpg",
-        github: "https://github.com/esrahattapoglu",
+        github: "https://github.com/esrahattapoglu/personal-website",
         viewSite: "https://personal-website-pearl-sigma-11.vercel.app"
 
       }
