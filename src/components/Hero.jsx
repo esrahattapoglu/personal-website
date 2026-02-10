@@ -96,7 +96,7 @@ function Hero() {
           <div className="flex-[1]">
             <div className="rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/images/profile2.jpg"
+                src="/images/profile.jpg"
                 alt={currentData.name}
                 className="w-full h-auto object-cover"
               />
@@ -105,6 +105,7 @@ function Hero() {
 
         </div>
       </div>
+      
     </section>
   );
 }
